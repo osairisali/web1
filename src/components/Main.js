@@ -3,7 +3,7 @@ import ArticleList from "./ArticleList";
 const Main = (props) => (
   <main>
     <div id="content">
-        <ArticleList />
+      <ArticleList />
     </div>
   </main>
 );

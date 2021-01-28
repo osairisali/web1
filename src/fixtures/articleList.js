@@ -5,10 +5,13 @@ const textSejarah2 =
 
 const sejarah = {
   id: "sejarah",
-  entry: {
-    h2: "sejarah",
+  entries: {
+    h2: "Sejarah",
     img: "assets/image/history.jpg",
-    text: [textSejarah1, textSejarah2],
+    texts: [
+      { id: "sejarah_1", entry: textSejarah1 },
+      { id: "sejarah_2", entry: textSejarah2 },
+    ],
   },
 };
 
@@ -19,13 +22,45 @@ const textGeografi2 =
 
 const geografi = {
   id: "geografi",
-  entry: {
-    h2: "geografi",
+  entries: {
+    h2: "Geografis",
     img: "assets/image/geografis.jpg",
-    text: [textGeografi1, textGeografi2],
+    texts: [
+      { id: "geografi_1", entry: textGeografi1 },
+      { id: "geografi_2", entry: textGeografi2 },
+    ],
   },
 };
 
-const articleEntries = [sejarah, geografi];
+const textWisata1 =
+  "Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati liburan akhir pekan terutama dari masyarakat yang berasal dari Jakarta sekitarnya. Selain menjadi kota wisata belanja, kota Bandung juga dikenal dengan sejumlah besar bangunan lama berarsitektur peninggalan Belanda.";
+const textWisata2 =
+  "Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.";
+
+const textWisata3 =
+  "Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss, Schmidt Bimasakti, Refraktor Bamberg, Cassegrain GOTO, dan Teleskop Surya. Refraktor Ganda Zeiss adalah jenis teleskop terbesar untuk meneropong bintang. Benda ini diletakkan pada atap kubah sehingga saat teropong digunakan, atap tersebut harus dibuka. Observatorium Bosscha boleh dikunjungi oleh siapapun, tanpa tiket. Namun, bagi yang ingin menggunakan teleskop Zeiss, wajib mendaftarkan diri. Untuk instansi atau lembaga pendidikan, diberikan jadwal hari Selasa sampai Jumat. Sementara itu, kunjungan individu dibuka setiap hari Sabtu.";
+
+const wisata1 = {
+  id: "wisata1",
+  entries: {
+    h3: "Farm House Lembang",
+    img: "assets/image/farm-house.jpg",
+    texts: [
+      { id: "wisata1_1", entry: textWisata1 },
+      { id: "wisata1_2", entry: textWisata2 },
+    ],
+  },
+};
+
+const wisata2 = {
+  id: "wisata2",
+  entries: {
+    h3: "Observatorium Bosscha",
+    img: "assets/image/bosscha.jpg",
+    texts: [{ id: "wisata2_1", entry: textWisata3 }],
+  },
+};
+
+const articleEntries = [sejarah, geografi, wisata1, wisata2];
 
 export { articleEntries };
