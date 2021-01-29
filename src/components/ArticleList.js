@@ -10,13 +10,6 @@ const ArticleList = (props) => (
         <Article articleEntries={article} />
       </div>
     ))}
-
-    {/* <section>
-      <Article key={wisata1.id} articleEntries={wisata1} h3={wisata1.entry.h3} />
-    </section>
-    <section>
-      <Article key={wisata2.id} articleEntries={wisata2} h3={wisata2.entry.h3} />
-    </section> */}
   </div>
 );
 

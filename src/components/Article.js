@@ -1,4 +1,4 @@
-const Article = ({ articleEntries, h3 }) => {
+const Article = ({ articleEntries }) => {
   if (!articleEntries.entries.h3) {
     return (
       <div>
@@ -16,6 +16,7 @@ const Article = ({ articleEntries, h3 }) => {
   return (
     <section>
       <article id={articleEntries.id}>
+        <h2>{articleEntries.entries.h2}</h2>
         <h3>{articleEntries.entries.h3}</h3>
         <img src={articleEntries.entries.img} alt={articleEntries.id}></img>
         {articleEntries.entries.texts.map((text) => (

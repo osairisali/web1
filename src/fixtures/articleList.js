@@ -43,6 +43,7 @@ const textWisata3 =
 const wisata1 = {
   id: "wisata1",
   entries: {
+    h2: "Wisata" ,
     h3: "Farm House Lembang",
     img: "assets/image/farm-house.jpg",
     texts: [
